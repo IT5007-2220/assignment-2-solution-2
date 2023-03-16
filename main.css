@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300;400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(130, 106, 251);
+}
+.wrapper {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.wrapper header{
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+}
+.wrapper .add-items {
+  margin-top: 10px;
+}
+.add-items .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.wrapper h2 {
+  font-weight: 400;
+  margin-top: 20px;
+}
+.add-items .input-box input{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.add-items .column {
+  display: flex;
+  column-gap: 15px;
+}
+.wrapper .table-head {
+  display: flex;
+  column-gap: 20px;
+}
+.wrapper table {
+  border-collapse: collapse;
+  border-bottom: 0px solid #ddd;
+  border-top: 0px solid #ddd;
+  table-layout: fixed;
+  width: 100%;
+}
+.wrapper .finished {
+  text-decoration: line-through;
+}
+table td {
+  width: 80px;
+  height: 50px;
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+  border-bottom: 0px solid #ddd;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+table td input {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: none;
+}
+table td input:hover {
+  background-color: rgb(113, 106, 251);
+}
+table tr {
+  width: 100%;
+  border-radius: 20%;
+}
+table tr:hover {
+  background-color: rgb(207, 207, 207);
+}
+.table-head label {
+  width: 100%;
+  margin-top: 10px;
+}
+.wrapper .buttons {
+  display: flex;
+  column-gap: 30px;
+}
+.add-items .option-box {
+  margin-top: 20px;
+}
+.add-items :where(.p-option, .po){
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  margin-top: 10px;
+}
+.add-items .po {
+  column-gap: 5px;
+}
+.po input{
+  accent-color: rgb(130, 106, 251);
+}
+.add-items :where(.po input, .po label){
+  cursor: pointer;
+}
+.add-items .button1 {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+
+.add-items .button1:hover {
+  background-color: rgb(113, 106, 251);
+}
+
+.buttons button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  font-weight: 400;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+
+.buttons button:hover{
+  background-color: rgb(113, 106, 251);
+}
+
+.float{
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  background: rgb(130, 106, 251);
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  display: none;
+  position: absolute;
+  word-wrap:break-word;
+  z-index: 999;
+}
+@media screen and (max-width: 500px){
+  .add-items .column{
+    flex-wrap: wrap;
+  }
+}

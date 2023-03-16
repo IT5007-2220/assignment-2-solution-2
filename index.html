@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IT5007-A2</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>TODO &#10133;</header>
+        <h2>OutstandingList&#128553;</h2>
+        <table>
+            <tr>
+                <td>Sno&#128290;</td>
+                <td>Detail&#9997;</td>
+                <td>Deadline&#128123;</td>
+                <td>Priority&#9889;</td>
+                <td>Finish&#129498;</td>
+            </tr>
+        </table>
+        <table class="plates">
+        </table>
+        <h2>FinishedList&#129395;</h2>
+        <table>
+            <tr>
+                <td>Sno&#128290;</td>
+                <td>Detail&#9997;</td>
+                <td>Deadline&#128123;</td>
+                <td>Priority&#9889;</td>
+                <td>Select&#128077;</td>
+            </tr>
+        </table>
+        <table class="finished">
+        </table>
+        <form class="add-items">
+            <div class="column">
+            <div class="input-box">
+                <label>Name&#127891;</label>
+                <input type="text" name="item" placeholder="Item Name" required><br/>
+            </div>
+            <div class="input-box">
+                <label>Deadline&#128121;</label>
+                <input type="date" name="deadline" placeholder="Deadline" required><br/>
+            </div>
+            </div>
+            <div class="input-box">
+                <label>Detail&#9997;</label>
+                <input type="text" name="des" placeholder="Limited 8 words" maxlength="40" required><br/>
+            </div>
+            <div class="option-box">
+                <label>Priority&#9889;</label>
+                <div class="p-option">
+                    <div class="po">
+                        <input type="radio" name="priority" value="&#128658;" id="check-h" checked/>
+                        <label for="check-p">High&#128658;</label>
+                    </div>
+                    <div class="po">
+                        <input type="radio" name="priority" value="&#128757;" id="check-m"/>
+                        <label for="check-m">Medium&#128757;</label>
+                    </div>
+                    <div class="po">
+                        <input type="radio" name="priority" value="&#128690;" id="check-l"/>
+                        <label for="check-l">Low&#128690;</label>
+                    </div>
+                </div>
+            </div>
+            <br/>
+
+            <input type="submit" value="ADD TODO &#10133;" class="button1">
+        </form>
+        <div class="buttons">
+            <button data-action="clear">DELETE&#128465;</button>
+            <button data-action="check">RESTORE&#128281;</button>
+        </div>
+        <div class="float"></div>
+    </div>
+</body>
+</html>
